@@ -1,0 +1,27 @@
+
+===========================================================
+
+Find the number of movies released between 1945 and 1959
+ select movie_name ,release_year from MOVIEDETAIL where release_year between 1945 and 1959;
+
+
+===========================================================
+
+Find the number of movies having rating more than 3.9
+select * from MOVIEDETAIL where rating>3.9;
+
+===========================================================
+
+Find the number of movies with duration more than 1.5 hours
+ select movie_id,duration from MOVIEDETAIL where duration>5400;
+
+===========================================================
+
+Find the list of years and number of movies released each year
+select count(*),release_year from MOVIEDETAIL group by release_year;
+
+===========================================================
+
+Count the total number of movies in the list
+select count(*) from MOVIEDETAIL;
+===========================================================
